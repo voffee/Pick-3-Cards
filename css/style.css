@@ -1,0 +1,83 @@
+
+/* Root Variables */
+:root {
+    --primary: #d4fc79;
+    --secondary: #96e6a1;
+    --white: #FAF9F6;
+    --black: #36454F;
+    --complement: #a179fc;
+}
+
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(90deg, var(--primary), var(--secondary) );
+}
+
+
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.header h1 {
+    margin-bottom: 5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 4.5rem;
+    color: var(--black);
+}
+
+.card-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.card {
+    height: 18rem;
+    width: 12rem;
+    border: 0.15rem solid var(--black);
+    border-radius: 0.4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-inner-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+}
+
+.card-inner-div h2 {
+    font-family: 'Esteban', serif;
+    font-size: 1.75rem;
+    color: var(--black);
+}
+
+.card-inner-div button {
+    width: 5.5rem;
+    height: 3rem;
+    background-color: var(--complement);
+    border: 0.15rem solid var(--black);
+    border-radius: 0.2rem;
+    opacity: 0.8;
+    font-family: 'Esteban', serif;
+    font-size: 1.5rem;
+}
